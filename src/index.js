@@ -23,13 +23,6 @@ function postImages(){
     addImages(object) } ) )
 }
 
-/// ACTION
-document.addEventListener('DOMContentLoaded', function(){
-    fetchImages()
-    addImages()
-    postImages()
-} )
-
 ////////////////////////////////////////////////////////////////////////////////
 const breedAPI = 'https://dog.ceo/api/breeds/list/all'
 
@@ -81,6 +74,8 @@ function findByDropdownMenu() {
         .map(dog =>`<li>${dog}</li>`).join('')
         dogbreeds.innerHTML += variable } )
 }
+
+//////////////////////////////////////////////////////////////////////////////
 
 /// CHANGE TEXT COLOR
 function changeTextColor() {
