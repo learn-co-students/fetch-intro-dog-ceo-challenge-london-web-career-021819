@@ -82,6 +82,13 @@ function findByDropdownMenu() {
         dogbreeds.innerHTML += variable } )
 }
 
+/// CHANGE TEXT COLOR
+function changeTextColor() {
+  document.addEventListener('click', event => {
+    if (event.target.tagName === 'LI') {
+	     event.target.style.color = 'blue'; } } )
+}
+
 /// ACTION
 document.addEventListener('DOMContentLoaded', function(){
     fetchImages()
@@ -92,4 +99,5 @@ document.addEventListener('DOMContentLoaded', function(){
     postBreeds()
     fetchBreedsList()
     findByDropdownMenu()
+    changeTextColor()
 })
