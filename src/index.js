@@ -41,3 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
       appendDogs(dog_breeds);
     });
 });
+
+allDogs = document.querySelector("#dog-breeds")
+allDogs.style.color = "black"
+allDogs.addEventListener("click", function() {
+    const curColour = allDogs.style.color;
+
+    allDogs.style.color = curColour === 'red' ? 'blue' : 'red';
+});
